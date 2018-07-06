@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <fieldset>
+    <caption>Informações pessoais</caption>
+    <form action="cadastro.php" method="POST">
+      Nome:
+      <input type="text" name="nome" autofocus required>
+      <br> Senha:
+      <input type="password" name="senha" required>
+      <br>Data:
+      <input type="data" name="data" min="">
+      <br> Url:
+      <input type="url" name="site">
+      <br> Arquivo:
+      <input type="file" name="arquivo">
+      <br> mensagem:
+      <br>
+      <textarea name="mensagem" cols="30" rows="10"></textarea>
+      <br>
+      <select name="veiculo">
+        <optgroup label="carro">
+          <option value="camaro">camaro</option>
+          <option value="honda">honda</option>
+          <option value="onix">onix</option>
+        </optgroup>
+        <optgroup label="moto">
+          <option value="rx">rx</option>
+          <option value="ninja">ninja</option>
+          <option value="bis">bis</option>
+        </optgroup>
+      </select>
+      <br>
+      <input name="cursos" list="lista-cursos">
+        <datalist id="lista-cursos">
+          <option value="php">php</option>
+          <option value="java">java</option>
+        </datalist>
+      <br>
+      <input type="submit" value="enviar">
+    </form>
+  </fieldset>
+</body>
+
+</html>

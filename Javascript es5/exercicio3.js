@@ -6,7 +6,10 @@ function temHabilidade(skills) {
 var skills = ['Javascript', 'ReactJS', 'React Native'];
 temHabilidade(skills); // true ou false
 */
-function temHabilidade(skills) {
-  
+function temHabilidade(skills, item) {
+ return (skills.indexOf(item) >= 0);
 }
+
 var skills = ['javascript', 'react', 'react native'];
+var resultado = temHabilidade(skills, 'javascript');
+console.log(resultado);

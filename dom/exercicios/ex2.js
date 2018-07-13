@@ -12,6 +12,9 @@ btnElement.onclick = function(){
   quadrado.onmouseover = function(){
     quadrado.style.backgroundColor = newColor;
   }
+  quadrado.onmouseleave = function(){
+    quadrado.style.backgroundColor = 'f06';
+  }
   containerPai.appendChild(quadrado);
 }
 

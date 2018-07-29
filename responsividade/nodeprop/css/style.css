@@ -60,14 +60,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.7);
   top: 0;
   left: 0;
-}
-
-.btn-close {
-  font-size: 3em;
-  float: right;
-  cursor: pointer;
-  color: #fff;
-  margin-right: 5%;
+  display: none;
 }
 
 .menu ul {
@@ -88,4 +81,12 @@ ul {
 
 .menu li a:hover {
   border: 1px solid #da6709;
+}
+
+.btn-close {
+  font-size: 3em;
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 5%;
 }
